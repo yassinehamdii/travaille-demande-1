@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="https://letsenhance.io/static/73136da51c245e80edc6ccfe44888a99/1015f/MainBefore.jpg">
+    <style>
+        /* Couleurs principales */
+        :root {
+            --primary-color: #4CAF50; /* Vert principal */
+            --secondary-color: #f4f4f9; /* Blanc cassé pour le fond */
+            --accent-color: #ff9800; /* Orange pour les liens */
+            --text-color: #333; /* Texte principal */
+            --footer-bg-color: #2c3e50; /* Bleu foncé pour le pied de page */
+            --nav-bg-color: #34495e; /* Bleu gris pour la barre de navigation */
+        }
+
+        /* Styles de base */
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: var(--secondary-color);
+            color: var(--text-color);
+        }
+        header {
+            background: var(--primary-color);
+            color: white;
+            padding: 1rem;
+            text-align: center;
+        }
+        nav {
+            background: var(--nav-bg-color);
+            text-align: center;
+            padding: 0.5rem;
+        }
+        nav a {
+            color: white;
+            margin: 0 1rem;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        nav a:hover {
+            color: var(--accent-color);
+        }
+        section {
+            padding: 2rem;
+            margin: 1rem auto;
+            max-width: 900px;
+            background: white;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+        h2 {
+            color: var(--primary-color);
+        }
+        footer {
+            text-align: center;
+            padding: 1rem;
+            background: var(--footer-bg-color);
+            color: white;
+        }
+        iframe {
+            width: 100%;
+            max-width: 560px;
+            height: 315px;
+            border: none;
+            margin-top: 1rem;
+        }
+        a.download-link {
+            color: var(--accent-color);
+            text-decoration: none;
+            font-weight: bold;
+        }
+        a.download-link:hover {
+            text-decoration: underline;
+        }
+        button {
+            background: var(--primary-color);
+            color: white;
+            border: none;
+            padding: 0.5rem 1rem;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        button:hover {
+            background: var(--accent-color);
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <header>
+        <h1>Mon Portfolio</h1>
+    </header>
+    <nav>
+        <a href="#home">Accueil</a>
+        <a href="#about">À propos</a>
+        <a href="#resume">CV</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <!-- Sections -->
+    <section id="about">
+        <h2>À propos de moi</h2>
+        <p>Je suis un développeur passionné par la création de sites Web interactifs et fonctionnels.</p>
+        <!-- Intégration d'une vidéo YouTube -->
+        <h3>Vidéo de présentation</h3>
+        <iframe src="https://www.youtube.com/embed/votre_code_video" allowfullscreen></iframe>
+    </section>
+
+    <section id="resume">
+        <h2>Mon CV</h2>
+        <!-- Lien de téléchargement -->
+        <p>Vous pouvez télécharger mon CV en cliquant sur le lien ci-dessous :</p>
+    </section>
+
+    <section id="contact">
+        <h2>Contactez-moi</h2>
+        <form action="submit_form.php" method="POST">
+            <label for="name">Nom :</label>
+            <input type="text" id="name" name="name" required><br><br>
+            <label for="email">Email :</label>
+            <input type="email" id="email" name="email" required><br><br>
+            <label for="message">Message :</label><br>
+            <textarea id="message" name="message" rows="5" cols="30" required></textarea><br><br>
+            <button type="submit">Envoyer</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; <b>2024 Mon Portfolio.</b> Tous droits réservés.</p>
+    </footer>
+</body>
+</html>
